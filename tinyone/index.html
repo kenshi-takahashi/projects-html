@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script defer src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0, maximum-scale=1, minimum-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <title>TinyOne</title>
+</head>
+
+<body>
+
+    <!-- HEAD -->
+
+    <div class=head>
+        <div class="head__inner">
+            <div class="burger_icon">
+                <button class="burger_strings offer-open1" onclick="isDown()">
+                    <div class="burger_strings_1"></div>
+                    <div class="burger_strings_2"></div>
+                    <div class="burger_strings_3"></div>
+                </button>
+            </div>
+            <div class="head_logo">
+                <a class="logo__inner" href="#">
+                    <div class="logo_image"></div>
+                    <div class="logo_text">tinyone</div>
+                </a>
+            </div>
+            <div class="head_icons">
+                <div class="head_icons_inner">
+                    <a class="head_icon1" href="#"></a>
+                    <a class="head_icon2" href="#"></a>
+                    <a class="head_icon3" href="#"></a>
+                    <a class="head_icon4" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BURGER -->
+
+    <div class="shadow" onclick="isDown()"></div>
+    <div class="burger">
+        <div class="burger_menu">
+            <div class="burger_logo"></div>
+            <a class="burger_home" href="#"> HOME</a>
+            <a class="burger_friends" href="#">FRIENDS</a>
+            <a class="burger_news" href="#">NEWS</a>
+            <a class="burger_settings" href="#">SETTINGS</a>
+            <a class="burger_profile" href="#">PROFILE</a>
+        </div>
+    </div>
+
+    <!-- INTRO -->
+
+    <div class="intro">
+        <div class="intro_title">Inspire your inspiration</div>
+        <div class="intro_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <a class="intro_button" href="#">GET START</a>
+        <div class="intro_cursor"></div>
+    </div>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+        <div class="container_title">Tinyone features</div>
+        <div class="container_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="features_container_pluses">
+            <div class="container_pluses_top">
+                <div class="pluse_responsive">
+                    <div class="responsive_icon"></div>
+                    <div class="responsive_text">
+                        <div class="pluse_title">Fully Responsive</div>
+                        <div class="pluse_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
+                    </div>
+                </div>
+                <div class="pluse_psd">
+                    <div class="psd_icon"></div>
+                    <div class="psd_text">
+                        <div class="pluse_title">Fully Layered PSD</div>
+                        <div class="pluse_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
+                    </div>
+                </div>
+                <div class="pluse_font">
+                    <div class="font_icon"></div>
+                    <div class="font_text">
+                        <div class="pluse_title">Font Awesome Icons</div>
+                        <div class="pluse_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_pluses_bottom">
+                <div class="pluse_html">
+                    <div class="html_icon"></div>
+                    <div class="html_text">
+                        <div class="pluse_title">HTML3 & CSS3</div>
+                        <div class="pluse_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
+                    </div>
+                </div>
+                <div class="pluse_email">
+                    <div class="email_icon"></div>
+                    <div class="email_text">
+                        <div class="pluse_title">Email Template</div>
+                        <div class="pluse_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
+                    </div>
+                </div>
+                <div class="pluse_download">
+                    <div class="download_icon"></div>
+                    <div class="download_text">
+                        <div class="pluse_title">Free to download</div>
+                        <div class="pluse_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING -->
+
+    <div class="pricing">
+        <div class="container_title pricing_title">Pricing And Free Trial</div>
+        <div class="container_subtitle pricing_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="pricing_container">
+            <div class="pricing_packets">
+                <div class="basic_icon"></div>
+                <div class="container_title pricing_inner_title">Basic</div>
+                <div class="container_subtitle pricing_inner_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="packets_coast">free</div>
+                <div class="packets_line"></div>
+                <div class="packets_time">free forever</div>
+                <a class="packets_button" href="#">get free now</a>
+            </div>
+            <div class="pricing_packets packet_center">
+                <div class="standart_icon"></div>
+                <div class="container_title pricing_inner_title">Standart</div>
+                <div class="container_subtitle pricing_inner_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="packets_coast">$99</div>
+                <div class="packets_line"></div>
+                <div class="packets_time">month</div>
+                <a class="packets_button" href="#">upgrade</a>
+            </div>
+            <div class="pricing_packets">
+                <div class="enterprice_icon"></div>
+                <div class="container_title pricing_inner_title">Enterprise</div>
+                <div class="container_subtitle pricing_inner_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="packets_coast">$199</div>
+                <div class="packets_line"></div>
+                <div class="packets_time">month</div>
+                <a class="packets_button" href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR_WORKS -->
+
+    <div class="our_works">
+        <div class="our_works_title container_title">Our works</div>
+        <div class="our_works_subtitle container_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="our_works_inner">
+            <a class="works1 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background" href="#"></div>
+                <div class="work_title">Fully Responsive</div>
+                <div class="work_subtitle">Design / Brending</div>
+            </a>
+            <a class="works2 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">Font Awesome Icons</div>
+                <div class="work_subtitle">Design / Brending</div>
+            </a>
+            <a class="works3 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">HTML5 & CSS3</div>
+                <div class="work_subtitle">App design / development</div>
+            </a>
+            <a class="works4 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">Various Layouts</div>
+                <div class="work_subtitle">Branding</div>
+            </a>
+            <a class="works5 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">Fully Responsive</div>
+                <div class="work_subtitle">Design / Brending</div>
+            </a>
+            <a class="works6 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">Font Awesome Icons</div>
+                <div class="work_subtitle">Design / Brending</div>
+            </a>
+            <a class="works7 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">HTML5 & CSS3</div>
+                <div class="work_subtitle">App design / development</div>
+            </a>
+            <a class="works8 works" href="#">
+                <div class="views">
+                    <div class="views_icon"></div>
+                    <div class="views_number">279</div>
+                </div>
+                <div class="date">
+                    <div class="data_number">07/03/14</div>
+                    <div class="data_icon"></div>
+                </div>
+                <div class="works_background"></div>
+                <div class="work_title">Various Layouts</div>
+                <div class="work_subtitle">Branding</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- OUR_TEAM -->
+
+    <div class="our_team">
+        <div class="our_team_title container_title">Our team</div>
+        <div class="our_team_subtitle container_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="team_inner">
+            <div class="team_staff">
+                <div class="staff_icon1"></div>
+                <div class="staff_title">John Doe</div>
+                <div class="staff_subtitle">UI Designer</div>
+                <div class="staff_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="staff_links">
+                    <a class="staff_link1" href="#"></a>
+                    <a class="staff_link2" href="#"></a>
+                    <a class="staff_link3" href="#"></a>
+                </div>
+            </div>
+            <div class="team_staff">
+                <div class="staff_icon2"></div>
+                <div class="staff_title">John Doe</div>
+                <div class="staff_subtitle">UI Designer</div>
+                <div class="staff_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="staff_links">
+                    <a class="staff_link1" href="#"></a>
+                    <a class="staff_link2" href="#"></a>
+                    <a class="staff_link3" href="#"></a>
+                </div>
+            </div>
+            <div class="team_staff">
+                <div class="staff_icon3"></div>
+                <div class="staff_title">John Doe</div>
+                <div class="staff_subtitle">UI Designer</div>
+                <div class="staff_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="staff_links">
+                    <a class="staff_link1" href="#"></a>
+                    <a class="staff_link2" href="#"></a>
+                    <a class="staff_link3" href="#"></a>
+                </div>
+            </div>
+            <div class="team_staff">
+                <div class="staff_icon4"></div>
+                <div class="staff_title">John Doe</div>
+                <div class="staff_subtitle">UI Designer</div>
+                <div class="staff_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                <div class="staff_links">
+                    <a class="staff_link1" href="#"></a>
+                    <a class="staff_link2" href="#"></a>
+                    <a class="staff_link3" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS & TESTIMONIAL -->
+
+    <div class="testimonial">
+        <div class="testimonial_title container_title">Stats & Testimonial</div>
+        <div class="testimonial_container container_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="testimonial_stats">
+            <div class="stats">
+                <div class="products_icon"></div>
+                <div class="stats_title">20</div>
+                <div class="stats_subtitle">Products</div>
+            </div>
+            <div class="stats">
+                <div class="downloads_icon"></div>
+                <div class="stats_title">120,000</div>
+                <div class="stats_subtitle">Downloads</div>
+            </div>
+            <div class="stats">
+                <div class="customers_icon"></div>
+                <div class="stats_title">1200</div>
+                <div class="stats_subtitle">Customers</div>
+            </div>
+            <div class="stats">
+                <div class="like_icon"></div>
+                <div class="stats_title">900</div>
+                <div class="stats_subtitle">Like</div>
+            </div>
+        </div>
+        <div class="testimonal_staff">
+            <div class="testimonial_staff_icon"></div>
+            <div class="testimonial_staff_title">John Doe</div>
+            <div class="testimonial_staff_subtitle">From Wodpress</div>
+            <div class="testimonial_content">
+                <div class="scobe_start"></div>
+                <div class="testimonial_content_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+                <div class="scobe_end"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KEEP AND TOUCH -->
+
+    <div class="keep_and_touch">
+        <div class="keep_title container_title">Keep and touch with us</div>
+        <div class="keep_subtitle container_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="keep_contacts">
+            <div class="keep_contacts_inner">
+                <div class="keep_adress_icon"></div>
+                <div class="keep_adress_title">Addres</div>
+                <div class="keep_adress_subtitle">66, Dang Van ngu, Dong Da, Ha noi, Vietnam</div>
+            </div>
+            <div class="keep_contacts_inner">
+                <div class="keep_email_icon"></div>
+                <div class="keep_adress_title">E-mail</div>
+                <div class="keep_adress_subtitle">contact@email.com</div>
+            </div>
+            <div class="keep_contacts_inner">
+                <div class="keep_phone_icon"></div>
+                <div class="keep_adress_title">Addres</div>
+                <div class="keep_adress_subtitle">+844 2333 55432</div>
+            </div>
+        </div>
+        <div class="keep_message">
+            <input class="input_email" type="email" placeholder="Email">
+            <input class="input_name" type="text" placeholder="Full Name">
+            <textarea class="input_message" type="text" placeholder="Message"></textarea>
+            <button class="keep_submit" type="submit">SEND MESSAGE</button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <div class="footer_title container_title">Sign up for our newsletter</div>
+        <div class="footer_subtitle container_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</div>
+        <div class="footer_input">
+            <input class="footer_email" type="email" placeholder="Enter your email to update">
+            <button class="footer_submit" type="submit">SUBMIT</button>
+        </div>
+        <div class="footer_contacts">
+            <div class="footer_contacts_inner">HALOVIETNAM LTD 66, Dang Van ngu, Dong Da Hanoi, Vietnam <br> contact@email.com <br> +844 35149182</div>
+            <div class="footer_contacts_inner">Exaples <br> Shop <br> License</div>
+            <div class="footer_contacts_inner">Contact <br> About <br> Privacite <br> Terms</div>
+            <div class="footer_contacts_inner">Download <br> Support <br> Documents</div>
+            <div class="footer_contacts_inner">Media <br> Blog <br> Forum </div>
+        </div>
+    </div>
+</body>
+
+</html>

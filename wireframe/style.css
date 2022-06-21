@@ -1,0 +1,414 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+    color: white;
+}
+
+*,
+::after,
+::before,
+h1, h2, h3, h4, h5, h6 {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+    color: white;
+}
+
+
+/* header
+   ======================*/
+
+.header {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 74px;
+
+    background: #2c3e50;
+    border-bottom: solid 1px#253342;
+}
+
+.menu {
+    width: 100%;
+    max-width: 1170px;
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: auto 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav {
+    margin: auto 15px;
+}
+
+.navigation {
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #7e95ae;
+
+    transition: color .15s ease-in-out;
+}
+
+.navigation:first-child {
+    margin-left: 0;
+}
+
+.navigation:hover {
+    color: white;
+}
+
+/* intro
+   ======================*/
+
+.intro {
+    background: #2c3e50;
+    width: 100%;
+    padding-top: 74px;
+}
+
+.intro__inner {
+    height: auto;
+    width: 100%;
+    max-width: 678px;
+    margin: 0 auto;
+    padding-bottom: 65px;
+}
+
+.intro__title {
+    color: white;
+    font-size: 45px;
+    font-weight: 100;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.intro__subtitle {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 30px
+}
+
+.intro__photo {
+    background: url(../html/img/macbook.png);
+    width: 678px;
+    height: 390px;
+    margin-top: 47px;
+    padding-top: 23px;
+    padding-left: 80px;
+}
+
+/* about us
+   ======================*/
+
+.about {
+    width: 100%;
+    height: 660px;
+    background: white;
+}
+
+.about__inner {
+    width: 100%;
+    max-width: 994px;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+}
+
+.about__title {
+    color: #6b6b6b;
+    font-size: 45px;
+    font-weight: 100;
+    margin-top: 55px;
+}
+
+.about__subtitle {
+    color: #6b6b6b;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 109px;
+    margin-right: 109px;
+}
+
+.ipad {
+    background: url(../html/img/ipad.png);
+    background-size: cover;
+    width: 100%;
+    max-width: 496px;
+    height: 351px;
+    margin: 55px auto 30px;
+}
+
+.about__text {
+    width: 100%;
+    color: #6b6b6b;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* team
+   ======================*/
+
+.team {
+    width: 100%;
+    height: 694px;
+    background: #eeeeee;
+}
+
+.team__container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.team__inner {
+    padding-top: 55px;
+}
+
+.team__title {
+    margin-top: 55px;
+    text-align: center;
+    margin: 0 auto;
+    color: #6b6b6b;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.team__subtitle {
+    color: #6b6b6b;
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+    width: 800px;
+    margin: 35px auto 0;
+}
+
+.team__peoples {
+    margin-top: 55px;
+    display: flex;
+}
+
+.people--one,
+.people--two,
+.people--three,
+.people--four {
+    width: 25%;
+}
+
+.people--one__photo {
+    background: url(../html/img/team-man.png);
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+}
+.people--two__photo {
+    background: url(../html/img/team-woman.png);
+    background-size: cover;
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+}
+.people--three__photo {
+    background: url(../html/img/team-man.png);
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+}
+.people--four__photo {
+    background: url(../html/img/team-woman.png);
+    background-size: cover;
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+}
+
+.team__name {
+    margin: 20px 0;
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.team__testimonials {
+    margin: 0 auto;
+    text-align: center;
+    color: #6b6b6b;
+    font-size: 15px;
+    font-weight: 300;
+    width: 100%;
+    max-width: 240px;
+}
+
+.butt {
+    width: 83px;
+    margin: 30px auto 0;
+}
+
+.button {
+    transition: .2s ease-in-out;
+    background: url(../html/img/team-button.png);
+    width: 83px;
+    height: 42px;
+}
+
+.button:hover {
+    background: url(../html/img/team-button2.png);
+}
+
+/* images
+   ======================*/
+
+.images {
+    width: 100%;
+    height: 1267px;
+}
+
+.images__inner {
+    padding: 65px 0;
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6,
+.image-7,
+.image-8 {
+    width: 355px;
+    height: 345px;
+    background: url(../html/img/image.png);
+}
+
+.image__link {
+    width: 355px;
+    height: 345px;
+    transition: 0.2s;
+}
+
+.image__link:hover {
+    transform: scale(1.05);
+}
+
+.img--link__background {
+    width: 355px;
+    height: 345px;
+    background: url(../html/img/image-link.png);
+}
+
+.image-4,
+.image-5,
+.image__link{
+    margin: 56px 0;
+}
+
+.image__description {
+    height: 108px;
+    background: #9a9a9a;
+    padding-top: 18px;
+
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.image-1:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-2:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-3:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-4:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-5:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-6:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-7:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+.image-8:hover > .image__description{
+    opacity: 1;
+    margin-top: 237px;
+}
+
+    .description__title {
+        font-family: 'Times New Roman', Times;
+        text-align: left;
+        margin-left: 15px;
+        margin-bottom: 8px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .description__subtitle {
+        text-align: left;
+        margin-left: 15px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    /* contact
+   ======================*/
+
+.contact__title,
+.contact__subtitle {
+    color: black;
+}
+
+.email {
+    width: 100%;
+    height: 720px;
+    color: black;
+}
+
+.button__sumbit {
+    font-size: 20px;
+    color: black;
+    width: 500px;
+    height: 100px;
+}
+
+.u__name {
+    color: black;
+}
+
+input {
+    color: black;
+}
+
+.name {
+    height: 200px;
+}
